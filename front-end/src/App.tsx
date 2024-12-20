@@ -1,5 +1,6 @@
 import Button from "./components/ui/Button";
 import ProductCard from "./components/ui/ProductCard"
+import Form from "./components/ui/Form";
 
 function App() {
 
@@ -46,6 +47,10 @@ function App() {
         onAddToCart={handleAddToCart}
         onOrder={handleOrder}
       />
+
+      {/* Formulaire */}
+      <Form mode="signin" />
+      <Form mode="registered" />
     </>
   )
 }
