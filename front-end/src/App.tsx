@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import Button from "./components/ui/Button";
 
+=======
+>>>>>>> 294b37244485e5e30f23d9ef44eb82760fcf4c74
 function App() {
   return (
     <>
