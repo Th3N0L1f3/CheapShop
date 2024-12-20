@@ -1,3 +1,4 @@
+import Button from "./components/ui/Button";
 import ProductCard from "./components/ui/ProductCard"
 
 function App() {
@@ -15,6 +16,16 @@ function App() {
       <h1 className="text-3xl font-bold underline">
         Hello world!
       </h1>
+
+      {/* Différents boutons */}
+      <Button text="Add to Cart" forme="rectangle" />
+      <Button text="Add to Cart" forme="cercle" icon="plus" />
+      <Button text="Add to Cart" forme="cercle" icon="moins" />
+      <Button text="Add to Cart" forme="cercle" icon="flèche-gauche" />
+      <Button text="Add to Cart" forme="cercle" icon="flèche-droite" />
+      <Button text="Add to Cart" forme="sans-forme" icon="menu-burger" />
+      <Button text="Add to Cart" forme="sans-forme" icon="panier" />
+      <Button text="Add to Cart" forme="sans-forme" icon="utilisateur" />
 
       {/* Carte en mode compact */}
       <ProductCard
