@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "./Image";
 
 type ProductCardProps = {
   title: string;
@@ -38,9 +39,9 @@ export default function ProductCard({
 
         {/* Image */}
         <div className="relative border-t-2 border-orange">
-          <img
-            src={imageUrl}
-            alt={title}
+          <Image
+            title={title}
+            imageUrl={imageUrl}
             className="w-full h-48 object-cover"
           />
         </div>
@@ -120,9 +121,9 @@ export default function ProductCard({
 
           {/* Image et note */}
           <div className="flex flex-col items-center">
-            <img
-              src={imageUrl}
-              alt={title}
+            <Image
+              title={title}
+              imageUrl={imageUrl}
               className="rounded-lg w-48 h-48 object-cover"
             />
           </div>
