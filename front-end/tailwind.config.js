@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      height: {
+        '426': '426px',
+      },
       colors: {
         'light-blue': '#A7BDE2',
         'dark-blue': '#416E98',
