@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "./Image";
+import Button from "./Button";
 
 type ProductCardProps = {
   title: string;
@@ -88,33 +89,31 @@ export default function ProductCard({
             <div className="flex justify-between">
                 <div className="flex items-center mt-4">
                     <span className="mr-2 font-medium">Quantité :</span>
-                    <button
+                    <Button
+                        text="-"
+                        forme="cercle"
+                        icon="moins"
                         onClick={() => handleQuantityChange(-1)}
-                        className="bg-red-500 text-white px-2 py-1 rounded-DEFAULT hover:bg-red-600"
-                    >
-                        -
-                    </button>
+                    />
                     <span className="mx-2 font-default">{quantity}</span>
-                    <button
+                    <Button
+                        text="+"
+                        forme="cercle"
+                        icon="plus"
                         onClick={() => handleQuantityChange(1)}
-                        className="bg-blue text-white px-2 py-1 rounded hover:bg-blue-600"
-                    >
-                        +
-                    </button>
+                    />
                 </div>
                 <div className="flex gap-4 mt-4">
-                    <button
+                    <Button
+                        text="Commander"
+                        forme="rectangle"
                         onClick={onOrder}
-                        className="bg-blue font-default text-white px-4 py-2 rounded hover:bg-dark-blue"
-                    >
-                        Commander
-                    </button>
-                    <button
+                    />
+                    <Button
+                        text="Ajouter au panier"
+                        forme="rectangle"
                         onClick={onAddToCart}
-                        className="bg-light-blue font-default text-black px-4 py-2 rounded hover:bg-dark-blue"
-                    >
-                        Ajouter au panier
-                    </button>
+                    />
                 </div>
             </div>
           </div>
