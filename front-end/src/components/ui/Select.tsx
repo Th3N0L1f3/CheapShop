@@ -1,9 +1,10 @@
-import { SelectProps } from "../../typeUiComponents";
+import { SelectProps } from "../../types/typeUiComponents";
+import { selectOptionList } from "../../data/SelectOptions";
 function Select({ type, className = "text-2xl mx-3 font-medium text-2xl" }: SelectProps) {
-  const selectOptionList = {
-    categorie: ["Vêtement", "Bijoux", "Jouets"],
-    langue: ["Français", "Anglais"],
-  };
+//   const selectOptionList = {
+//     categorie: ["Vêtement", "Bijoux", "Jouets"],
+//     langue: ["Français", "Anglais"],
+//   };
   if (type == "categorie") {
     return (
       <>

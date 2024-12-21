@@ -1,4 +1,4 @@
-import { ButtonProps } from "../../typeUiComponents";
+import { ButtonProps } from "../../types/typeUiComponents";
 import { SlArrowLeft, SlArrowRight, SlMenu } from "react-icons/sl";
 import { FaCartShopping, FaUser } from "react-icons/fa6";
 import { IoRemove, IoAdd } from "react-icons/io5";

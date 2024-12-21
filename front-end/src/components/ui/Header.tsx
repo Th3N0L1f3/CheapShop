@@ -1,5 +1,5 @@
 import Button from "./Button";
-import { HeaderProps } from "../../typeUiComponents";
+import { HeaderProps } from "../../types/typeUiComponents";
 import Input from "./Input";
 import clsx from "clsx";
 import Select from "./Select";
