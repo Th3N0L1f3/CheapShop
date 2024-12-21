@@ -3,6 +3,7 @@ import ProductCard from "./components/ui/ProductCard"
 import Header from "./components/ui/Header"
 import Form from "./components/ui/Form";
 import Input from "./components/ui/Input";
+import CardList from "./components/ui/CardList";
 
 function App() {
 
@@ -69,6 +70,11 @@ function App() {
         type="email"
         mode="form-input"
       />
+
+      {/* Liste de cartes */}
+      <CardList variantList="product" />
+      <CardList variantList="command" />
+      <CardList variantList="basket" />
     </>
   )
 }
