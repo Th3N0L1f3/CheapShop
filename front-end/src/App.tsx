@@ -1,5 +1,6 @@
 import Button from "./components/ui/Button";
 import ProductCard from "./components/ui/ProductCard"
+import Header from "./components/ui/Header"
 import Form from "./components/ui/Form";
 import Input from "./components/ui/Input";
 
@@ -15,19 +16,21 @@ function App() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
+      {/* <h1 className="text-3xl font-bold underline">
         Hello world!
-      </h1>
+      </h1> */}
+
+      <Header title="CheapShop" />
 
       {/* Différents boutons */}
       <Button text="Add to Cart" forme="rectangle" />
-      <Button text="Add to Cart" forme="cercle" icon="plus" />
-      <Button text="Add to Cart" forme="cercle" icon="moins" />
-      <Button text="Add to Cart" forme="cercle" icon="flèche-gauche" />
-      <Button text="Add to Cart" forme="cercle" icon="flèche-droite" />
-      <Button text="Add to Cart" forme="sans-forme" icon="menu-burger" />
-      <Button text="Add to Cart" forme="sans-forme" icon="panier" />
-      <Button text="Add to Cart" forme="sans-forme" icon="utilisateur" />
+      <Button forme="cercle" icon="plus" />
+      <Button forme="cercle" icon="moins" />
+      <Button forme="cercle" icon="flèche-gauche" />
+      <Button forme="cercle" icon="flèche-droite" />
+      <Button forme="sans-forme" icon="menu-burger" />
+      <Button forme="sans-forme" icon="panier" />
+      <Button forme="sans-forme" icon="utilisateur" />
 
       {/* Carte en mode compact */}
       <ProductCard
