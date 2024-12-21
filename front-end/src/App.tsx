@@ -1,6 +1,7 @@
 import Button from "./components/ui/Button";
 import ProductCard from "./components/ui/ProductCard"
 import Form from "./components/ui/Form";
+import Input from "./components/ui/Input";
 
 function App() {
 
@@ -51,6 +52,20 @@ function App() {
       {/* Formulaire */}
       <Form mode="signin" />
       <Form mode="registered" />
+
+      {/* Barre de recherche */}
+      <Input
+        placeholder="Rechercher un produit ..."
+        type="search"
+        mode="input-search"
+        className="shadow-md"
+      />
+
+      <Input
+        placeholder="Email"
+        type="email"
+        mode="form-input"
+      />
     </>
   )
 }

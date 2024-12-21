@@ -3,6 +3,7 @@ type FormProps = {
 };
 
 import Button from "./Button";
+import Input from "./Input";
 
 export default function Form({ mode }: FormProps) {
   if (mode === "registered") {
@@ -16,51 +17,35 @@ export default function Form({ mode }: FormProps) {
             <p className="text-sm font-default text-dark-orange">Inscrivez-vous dès maintenant et bénéficiez d'un accès complet à notre application.</p>
             
             <div className="flex gap-2">
-                <label className="relative w-full">
-                    <input 
-                        required 
-                        placeholder="Prénom" 
-                        type="text" 
-                        className="w-full font-default p-3 border border-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-blue" 
-                    />
-                </label>
-
-                <label className="relative w-full">
-                    <input 
-                        required 
-                        placeholder="Nom" 
-                        type="text" 
-                        className="w-full font-default p-3 border border-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-blue" 
-                    />
-                </label>
+                <Input
+                    placeholder="Nom"
+                    type="text"
+                    mode="form-input"
+                />
+                <Input
+                    placeholder="Prénom"
+                    type="text"
+                    mode="form-input"
+                />
             </div>
 
-            <label className="relative">
-                <input 
-                    required 
-                    placeholder="Email" 
-                    type="email" 
-                    className="w-full font-default p-3 border border-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
-                />
-            </label>
+            <Input
+                placeholder="Email"
+                type="email"
+                mode="form-input"
+            />
 
-            <label className="relative">
-                <input 
-                    required 
-                    placeholder="Mot de passe" 
-                    type="password" 
-                    className="w-full font-default p-3 border border-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
-                />
-            </label>
+            <Input
+                placeholder="Mot de passe"
+                type="password"
+                mode="form-input"
+            />
 
-            <label className="relative">
-                <input 
-                    required 
-                    placeholder="Confirmer le mot de passe" 
-                    type="password" 
-                    className="w-full font-default p-3 border border-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
-                />
-            </label>
+            <Input
+                placeholder="Confirmer le mot de passe"
+                type="password"
+                mode="form-input"
+            />
 
             <Button
                 text="Envoyer"
@@ -84,23 +69,17 @@ export default function Form({ mode }: FormProps) {
                 </p>
                 <p className="text-sm font-default text-dark-orange">Connectez-vous dès maintenant et bénéficiez d'un accès complet à notre application.</p>
 
-                <label className="relative">
-                    <input 
-                        required 
-                        placeholder="Email" 
-                        type="email" 
-                        className="w-full p-3 font-default border border-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
-                    />
-                </label>
+                <Input
+                    placeholder="Email"
+                    type="email"
+                    mode="form-input"
+                />
 
-                <label className="relative">
-                    <input 
-                        required 
-                        placeholder="Password" 
-                        type="password" 
-                        className="w-full p-3 font-default border border-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" 
-                    />
-                </label>
+                <Input
+                    placeholder="Mot de passe"
+                    type="password"
+                    mode="form-input"
+                />
 
                 <Button
                     text="Envoyer"
