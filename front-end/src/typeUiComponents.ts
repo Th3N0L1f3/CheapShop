@@ -10,3 +10,8 @@ export type HeaderProps = {
     title: string;
     className?: string;
 }
+
+export type SelectProps = {
+  type: "langue" | "categorie";
+  className?: string;
+}
